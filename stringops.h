@@ -35,7 +35,7 @@ bool contains(const ContainerT& cont, const std::string& to_find) {
 
 template<class ContainerT>
 auto find_string(const ContainerT& cont, const std::string& to_find) {
-    return std::find_first_of(cont.begin(), cont.end(), to_find.begin(), to_find.end());
+    return std::search(cont.begin(), cont.end(), to_find.begin(), to_find.end());
 }
 
 #endif // STRINGOPS_H
